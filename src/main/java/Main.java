@@ -18,7 +18,7 @@ public class Main {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance(); // Abstract Factory DP
             DocumentBuilder builder = factory.newDocumentBuilder(); // Builder Design Pattern
 
-            final String inputFileName = "C:\\Users\\HP\\Downloads\\reader-development\\TestValueType\\target\\classes\\InputXML.xml";
+            final String inputFileName = "InputXML.xml";
             Document document = builder.parse(new File( inputFileName ));
 
             Schema schema = null;
@@ -95,7 +95,7 @@ public class Main {
             DocumentBuilder builder = factory.newDocumentBuilder();
 
             //Build Document
-            final String inputFileName = "C:\\Users\\ayazi\\IdeaProjects\\DOMXMLParser\\target\\InputXML.xml";
+            final String inputFileName = "InputXML.xml";
             Document document = builder.parse(new File(inputFileName));
 
             //Normalize the XML Structure; It's just too important !!
@@ -133,7 +133,7 @@ public class Main {
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
-        final String inputFileName = "C:\\Users\\ayazi\\IdeaProjects\\DOMXMLParser\\target\\InputXML.xml";
+        final String inputFileName = "InputXML.xml";
         Document document = builder.parse(new File(inputFileName));
         document.getDocumentElement().normalize();
         NodeList nList = document.getElementsByTagName("employee");
